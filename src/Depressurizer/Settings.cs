@@ -49,6 +49,11 @@ namespace Depressurizer
             }
         }
 
+        /// <summary>
+        ///     Path to the Steam installation folder
+        /// </summary>
+        public string SteamPath { get; set; } = null;
+
         #endregion
 
         #region Public Methods and Operators

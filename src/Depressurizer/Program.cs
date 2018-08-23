@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Depressurizer.Dialogs;
 
 namespace Depressurizer
 {
@@ -24,6 +25,16 @@ namespace Depressurizer
             Application.ApplicationExit += OnApplicationExit;
 
             Settings.Load();
+            if (string.IsNullOrWhiteSpace(Settings.SteamPath))
+            {
+                using (SteamPathDialog dialog = new SteamPathDialog())
+                {
+                    dialog.ShowDialog();
+
+                    Settings.SteamPath = dialog.Path;
+                    Settings.Save();
+                }
+            }
 
             Application.Run(new MainForm());
         }

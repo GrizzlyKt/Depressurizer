@@ -121,4 +121,16 @@
   <data name="Depressurizer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Depressurizer.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SteamPathDialog_PathDoesntContain" xml:space="preserve">
+    <value>Could not find "appinfo.vdf" in the given path! Are you sure this is the correct path?</value>
+  </data>
+  <data name="SteamPathDialog_PathDoesntExist" xml:space="preserve">
+    <value>The given path does not exist! Are you sure this is the correct path?</value>
+  </data>
+  <data name="SteamPathDialog_PathEmpty" xml:space="preserve">
+    <value>Path can not be empty!</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
 </root>
