@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Depressurizer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A Steam library categorizing tool.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Depressurizer")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright ©  2011 Steve Labbe, 2018 Martijn Vegter")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
