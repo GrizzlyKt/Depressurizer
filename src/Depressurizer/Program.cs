@@ -5,6 +5,12 @@ namespace Depressurizer
 {
     internal static class Program
     {
+        #region Properties
+
+        private static Settings Settings => Settings.Instance;
+
+        #endregion
+
         #region Methods
 
         /// <summary>
@@ -15,7 +21,16 @@ namespace Depressurizer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.ApplicationExit += OnApplicationExit;
+
+            Settings.Load();
+
             Application.Run(new MainForm());
+        }
+
+        private static void OnApplicationExit(object sender, EventArgs e)
+        {
+            Settings.Save();
         }
 
         #endregion
